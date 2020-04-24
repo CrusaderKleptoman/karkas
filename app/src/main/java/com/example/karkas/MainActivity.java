@@ -29,12 +29,12 @@ public class MainActivity extends AppCompatActivity {
         EditText editTextPhone = findViewById(R.id.editTextPHONE);
 
         String name = editTextName.getText().toString();
-        int number = Integer.parseInt(editTextNumber.getText().toString());
+        String number = editTextNumber.getText().toString();
         String rout = editTextRout.getText().toString();
-        int loc = Integer.parseInt(editTextLoc.getText().toString());
+        String loc = editTextLoc.getText().toString();
         String place = editTextPlace.getText().toString();
         String time = editTextTime.getText().toString();
-        int phone = Integer.parseInt(editTextPhone.getText().toString());
+        String phone = editTextPhone.getText().toString();
 
         MyDataBase openHelper = new MyDataBase(this);
 

@@ -44,7 +44,7 @@ class MyDataBase {
     }
 
     //обавление записей
-    public long insert(String name, int number, String rout, int loc, String place, String time, int phone){
+    public long insert(String name, String number, String rout, String loc, String place, String time, String phone){
         ContentValues values = new ContentValues();
         values.put(COLUMN_NAME, name);
         values.put(COLUMN_NUMBER, number);
@@ -95,12 +95,12 @@ public class OpenHelper extends SQLiteOpenHelper {
         String query = "CREATE TABLE " + TABLE_NAME + " (" +
                 COLUMN_ID + " INTEGER PRIMARY KEY AUTOINCREMENT, " +
                 COLUMN_NAME + " TEXT, " +
-                COLUMN_NUMBER + " LONG, " +
+                COLUMN_NUMBER + " TEXT, " +
                 COLUMN_ROUT + " TEXT, " +
-                COLUMN_LOC + " LONG, " +
+                COLUMN_LOC + " TEXT, " +
                 COLUMN_PLACE + " TEXT, " +
                 COLUMN_TIME + " TEXT, " +
-                COLUMN_PHONE + " LONG);";
+                COLUMN_PHONE + " TEXT);";
         db.execSQL(query);
     }
 
