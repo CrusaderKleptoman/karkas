@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">karkas</string>
+    <string name="name">ФИО</string>
+    <string name="number">Номер поезда</string>
+    <string name="rout">Маршрут</string>
+    <string name="loc">Номер вагона</string>
+    <string name="place">Вокзал</string>
+    <string name="time">Время отправления</string>
+    <string name="phone">Номер телефона</string>
+    <string name="button_add">Записать</string>
+
+
+</resources>
